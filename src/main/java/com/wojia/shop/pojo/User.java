@@ -8,6 +8,7 @@ package com.wojia.shop.pojo;
  */
 
 public class User {
+
     private Integer uid;//编号
     private String username;//用户名
     private String password;//密码
