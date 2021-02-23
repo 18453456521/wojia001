@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wojia.shop.mapper.UserMapper">
+    <insert id="ins" parameterType="User">
+        INSERT into user values (null,#{username},#{password},#{name},#{email},#{phone},#{addr},#{state},#{code})
+    </insert>
+    <select id="selectByUsername" parameterType="String" resultType="User">
+        SELECT * from user where username=#{username}
+    </select>
+</mapper>
