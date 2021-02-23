@@ -53,27 +53,26 @@
             $("#repassword").blur(function () {
                 if (un2 != $(this).val()) {
                     $("#msg4").text("两次输入密码不一致！")
-                // } else {
-                //     b2 = true;
-                //
-                // }
-            })
-
-            $("#email").blur(function () {
-                var value = $(this).val();
-                var email = /\w+[@]{1}\w+[.]\w+/;
-                if (value == null) {
-                    c = true;
-                    $("#msgemail").text("邮箱不能为空！")
                 }
-                if (email.test(value)) {
-                    $("#msgemail").text("√")
-                } else {
 
-                    $("#msgemail").text("邮箱格式不正确！")
-                }
+                $("#email").blur(function () {
+                    var value = $(this).val();
+                    var email = /\w+[@]{1}\w+[.]\w+/;
+                    if (value == null) {
+                        c = true;
+                        $("#msgemail").text("邮箱不能为空！")
+                    }
+                    if (email.test(value)) {
+                        $("#msgemail").text("√")
+                    } else {
+
+                        $("#msgemail").text("邮箱格式不正确！")
+                    }
+                })
+
             })
         })
+
     </script>
 </head>
 
