@@ -1,7 +1,7 @@
 package com.wojia.shop.service;
 
 import com.wojia.shop.pojo.User;
-import org.apache.ibatis.annotations.Insert;
+
 
 public interface UserService {
     //添加用户

@@ -9,4 +9,5 @@
     <select id="selectByUsername" parameterType="String" resultType="User">
         SELECT * from user where username=#{username}
     </select>
+    <select id="selectByUsernameAndpassword" resultType="com.wojia.shop.pojo.User"></select>
 </mapper>
